@@ -25,8 +25,11 @@ function interview(arr)
       }
     }
     // We have now passed the first n candidates.
-    else if (arr[i]>scoreToBeat) // if the candidate's score is higher than scoreToBeat
+    else if (arr[i]>scoreToBeat && (Math.random() < 0.5)) //replace 0.5 with another number to change probablility
+    // if the candidate's score is higher than scoreToBeat
+    // AND the candidate accepts
     {
+      console.log("CANDIDATE ACCEPTS");
       return i; // current candidate is selected
     }
     
@@ -44,6 +47,9 @@ function interview(arr)
 console.log("Selected candidate: " + interview([0,1,2,3,2,3,2,1,0,8,0]) +"\n");
 
 // selected the last person
-console.log("Selected candidate: " + interview([0,1,2,3,2,3,2,1,0,0,0]) +"\n");
+console.log("Selected candidate: " + interview([0,1,2,4,2,3,2,1,0,0,0]) +"\n");
+
+
+
 
 
