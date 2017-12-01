@@ -48,8 +48,3 @@ console.log("Selected candidate: " + interview([0,1,2,3,2,3,2,1,0,8,0]) +"\n");
 
 // selected the last person
 console.log("Selected candidate: " + interview([0,1,2,4,2,3,2,1,0,0,0]) +"\n");
-
-
-
-
-
